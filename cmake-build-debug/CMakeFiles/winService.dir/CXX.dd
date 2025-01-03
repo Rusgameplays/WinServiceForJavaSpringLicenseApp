@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\winService.dir\main.cpp.obj: dyndep
+
+build CMakeFiles\winService.dir\service.cpp.obj: dyndep
+
+build CMakeFiles\winService.dir\named_pipe.cpp.obj: dyndep
+
+build CMakeFiles\winService.dir\http_client.cpp.obj: dyndep
+
+build CMakeFiles\winService.dir\utils.cpp.obj: dyndep
+
+build CMakeFiles\winService.dir\globals.cpp.obj: dyndep
+

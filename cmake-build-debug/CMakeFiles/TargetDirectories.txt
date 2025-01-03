@@ -1,0 +1,3 @@
+C:/Users/solod/Desktop/MTUCI/3course/winService/cmake-build-debug/CMakeFiles/winService.dir
+C:/Users/solod/Desktop/MTUCI/3course/winService/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/solod/Desktop/MTUCI/3course/winService/cmake-build-debug/CMakeFiles/rebuild_cache.dir
