@@ -14,13 +14,13 @@ std::string sendRequestToSpring(const std::string& endpoint, const std::string& 
     try {
         asio::io_context ioc;
         tcp::resolver resolver(ioc);
-        auto const results = resolver.resolve("localhost", "8080");
+        auto const results = resolver.resolve("SolodkovSpringProject", "8080");
 
         tcp::socket socket(ioc);
         asio::connect(socket, results.begin(), results.end());
 
         http::request<http::string_body> req{http::verb::post, endpoint, 11};
-        req.set(http::field::host, "localhost");
+        req.set(http::field::host, "SolodkovSpringProject");
         req.set(http::field::content_type, "application/json");
 
         if (!userTokens.empty()) {

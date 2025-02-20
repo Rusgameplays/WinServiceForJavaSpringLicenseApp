@@ -14,11 +14,6 @@ void WINAPI ServiceCtrlHandler(DWORD dwCtrlCode) {
     if (dwCtrlCode == SERVICE_CONTROL_STOP) {
         keepRunning = false;
 
-        if (hPipe != INVALID_HANDLE_VALUE) {
-            CloseHandle(hPipe);
-            hPipe = INVALID_HANDLE_VALUE;
-        }
-
         ServiceStatus.dwCurrentState = SERVICE_STOPPED;
         SetServiceStatus(hServiceStatusHandle, &ServiceStatus);
     }
